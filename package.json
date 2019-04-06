@@ -1,0 +1,31 @@
+{
+	"name": "import-data",
+	"version": "1.0.0",
+	"description": "Genuinely async import() of data producing modules",
+	"main": "node.js",
+	"scripts": {
+		"test": "node -r esm .test"
+	},
+	"repository": {
+		"type": "git",
+		"url": "https://archive.voodoowarez.com/import-data"
+	},
+	"keywords": ["async", "import", "dynamic import"],
+	"author": "rektide de la faye",
+	"license": "MIT",
+	"module": "import-data.js",
+	"esm": true,
+	"@std/esm": {
+		"cjs": {
+			"namedExports": true
+		}
+	},
+	"dependencies": {
+		"greenlet": "^1.0.1",
+		"microjob": "^0.4.2"
+	},
+	"devDependencies": {
+		"esm": "^3.2.22",
+		"tape": "^4.10.1"
+	}
+}
